@@ -1,6 +1,9 @@
 # NgrxTutorial
 
+![img](https://imgur.com/a/0iwaauY)
+
 Conteúdo visto no canal (https://www.youtube.com/watch?v=yCac7PRG6R4&t=843s) em que é demonstrado a utilização e implementação do NGRX para mudanças de estado em ANGULAR.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
