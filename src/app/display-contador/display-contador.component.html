@@ -1,17 +1,12 @@
 <div class="container d-flex justify-content-center flex-column">
-    
+
     <div class="tv">
         <div class="tela">
             <h1 class="text-center">
                 <p>TV B</p>
-                {{counter}}
+                {{counter$ | async}}
             </h1>
         </div>
-        <div class="controles">
-            <div class="btns text-center">
-                <button class="p-2 btn btn-primary" (click)="counter++1">+</button>
-                <button class="p-2 btn btn-danger" (click)="counter--1">-</button>
-            </div>
-        </div>
+        <div class="controles"></div>
     </div>
 </div>

@@ -5,19 +5,19 @@
         <div class="tela">
           <h1 class="text-center">
             <p>TV A</p>
-            {{counter}}
+            _{{counter$ | async}}
           </h1>
         </div>
         <div class="controles">
           <div class="btns text-center">
-            <button class="p-2 btn btn-primary" (click)="counter = counter + 1">+</button>
-            <button class="p-2 btn btn-danger" (click)="counter = counter - 1">-</button>
+            <button class="p-2 btn btn-primary" (click)="_incrementaContador()">+</button>
+            <button class="p-2 btn btn-danger" (click)="_decrementaContador()">-</button>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="item">
-    <app-display-contador [counter]="counter"></app-display-contador>
+    <app-display-contador></app-display-contador>
   </div>
 </div>

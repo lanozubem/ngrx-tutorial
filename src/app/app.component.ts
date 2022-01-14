@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { map } from 'rxjs';
+import { decrementaContador, IAppState, incrementaContador } from './store/app.state';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +10,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  counter = 0;
+  counter$ = this.store
+    .select('app')
+    .pipe(
+      map(e => e.counter)
+    );
+
   title = 'ngrx-tutorial';
 
+  constructor(private store: Store<{ app: IAppState }>) { }
+
+  _incrementaContador() {
+    this.store.dispatch(incrementaContador())
+  }
+
+  _decrementaContador() {
+    this.store.dispatch(decrementaContador())
+  }
 }

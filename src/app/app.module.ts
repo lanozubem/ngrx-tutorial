@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DisplayContadorComponent } from './display-contador/display-contador.component';
 import { StoreModule } from '@ngrx/store';
+import { appReducer } from './store/app.state';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { StoreModule } from '@ngrx/store';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({ app: appReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]
