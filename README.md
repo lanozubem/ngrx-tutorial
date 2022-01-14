@@ -1,6 +1,6 @@
 # NgrxTutorial
 
-![img](https://imgur.com/a/0iwaauY)
+![img](https://i.imgur.com/zsVVwLL.png)
 
 Conteúdo visto no canal (https://www.youtube.com/watch?v=yCac7PRG6R4&t=843s) em que é demonstrado a utilização e implementação do NGRX para mudanças de estado em ANGULAR.
 
